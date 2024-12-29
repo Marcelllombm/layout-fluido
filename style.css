@@ -19,9 +19,9 @@ a:hover {
 
 /* 960px */
 .content {
-  width: 70.27818448023426%;
+  width: 80%;
   margin: 0 auto;
-  padding: 1.041666666666667% 0;
+  padding: 3.125%;
 }
 
 .clear {
@@ -135,13 +135,13 @@ a:hover {
   margin-bottom: 3.174603174603175%;
 }
 
-.lastnews_destaque .capaaqui {
+/* .lastnews_destaque .capaaqui {
   float: left;
   width: 100%;
   height: 300px;
   background: #eee;
   margin-bottom: 3.174603174603175%;
-}
+} */
 
 .lastnews_destaque h1 {
   font-size: 1.5rem;
@@ -166,13 +166,13 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.lastnews_article .capaaqui {
+/* .lastnews_article .capaaqui {
   float: left;
   width: 100%;
   margin-bottom: 20px;
   background: #eee;
   height: 150px;
-}
+} */
 
 .lastnews_article h1 {
   margin: 10px 0;
@@ -202,17 +202,24 @@ a:hover {
 .sidebar_widget time {
   font-size: 0.8rem;
 }
-.sidebar_widget .capaaqui {
+/* .sidebar_widget .capaaqui {
   float: left;
   width: 100%;
   height: 150px;
   background: #eee;
   margin-bottom: 15px;
-}
+} */
 
 /*FOOTER*/
 .main_footer {
   background: #eee;
   padding: 25px 0;
   text-align: center;
+}
+
+@media (max-width: 1080px) {
+  .content {
+    width: 96%;
+    padding: 2%;
+  }
 }
