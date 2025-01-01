@@ -215,7 +215,42 @@ a:hover {
   font-size: 14px;
   margin-bottom: 15px;
 }
+.htmlchars h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 30px 0 20px 0;
+}
+.htmlchars p {
+  font-size: 1em;
+  margin: 15px 0;
+}
 
+.art_for {
+  float: left;
+  width: 22.75%;
+  margin: 0 3% 3% 0;
+}
+.art_for:nth-of-type(4n + 0) {
+  margin-right: 0;
+}
+.art_for h1 {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+.art_for a {
+  text-decoration: none;
+  color: #2b4678;
+}
+.art_for a:hover {
+  text-decoration: underline;
+  color: #2b4678;
+}
+.art_for time {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #888;
+}
+/* SIDEBAR  */
 .sidebar {
   float: right;
   width: 30%;
@@ -236,15 +271,7 @@ a:hover {
   color: #888;
   text-transform: uppercase;
 }
-.htmlchars h3 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin: 30px 0 20px 0;
-}
-.htmlchars p {
-  font-size: 1em;
-  margin: 15px 0;
-}
+
 .sidebar_widget {
   float: left;
   width: 100%;
@@ -311,6 +338,13 @@ a:hover {
   .sidebar_widget .capaaqui {
     background: #fff;
   }
+  .art_for {
+    width: 31%;
+    margin: 0 3.5% 3.5% 0 !important;
+  }
+  .art_for:nth-of-type(3n + 0) {
+    margin-right: 0 !important;
+  }
 }
 @media (max-width: 640px) {
   .main_header_logo {
@@ -329,6 +363,14 @@ a:hover {
   }
   .main_header_menu .content {
     width: 100% !important;
+  }
+  .art_for,
+  .art_for:nth-of-type(3n + 0) {
+    width: 48%;
+    margin: 0 4% 4% 0 !important;
+  }
+  .art_for:nth-of-type(2n + 0) {
+    margin-right: 0 !important;
   }
 }
 @media (min-width: 581px) {
@@ -403,6 +445,15 @@ a:hover {
     width: 100%;
     margin: 0 !important;
     marign-bottom: 5% !important;
+  }
+  .art_for,
+  .art_for:nth-of-type(3n + 0),
+  .art_for:nth-of-type(2n + 0) {
+    width: 100% !important;
+    margin: 0 0 6.521739130434783% 0 !important;
+  }
+  .art_for h1 {
+    font-size: 0.5rem !important;
   }
 }
 
