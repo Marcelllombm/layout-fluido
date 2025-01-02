@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="mit" content="2017-10-04T13:10:49-03:00+9141" />
+
+    <title>WS - RWD: Layout Fluído</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header class="main_header container">
+      <div class="logosearch content">
+        <h1 class="main_header_logo">WS - Design Design Responsivo</h1>
+
+        <form class="main_header_search" name="search" action="" method="post">
+          <input class="s" type="search" placeholder="Pesquisar Conteúdo:" />
+          <input class="b" type="submit" value="Ir" />
+        </form>
+        <div class="clear"></div>
+      </div>
+
+      <div class="main_header_menu">
+        <a href="#" class="mobmenu" title="Mobile a Nav">MENU</a>
+        <div class="content">
+          <ul>
+            <li><a href="index.html" target="_self" title="Home">Home</a></li>
+            <li><a href="artigo.html" target="_self" title="Artigos">Artigos</a></li>
+            <li><a href="categoria.html" title="Categorias">Categorias</a></li>
+            <li><a href="contato.html" title="Fale Conosco">Contato</a></li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main_content container">
+      <div class="content">
+        <header class="title-section">
+          <h1>Fale Conosco</h1>
+          <p class="tagline">Este formulário sever apenas para dar exemplo de ajustes!</p>
+        </header>
+        <form class="form">
+          <fieldset class="form_left">
+            <label for="">
+              <span>Informe seu nome:</span>
+              <input type="text" placeholder="Nome:" />
+            </label>
+
+            <label for="">
+              <span>Informe seu E-mail</span>
+              <input type="email" placeholder="E-mail" />
+            </label>
+
+            <label for="">
+              <span>E que Estado você está?</span>
+              <input type="text" placeholder="UF:" />
+            </label>
+
+            <label for=""
+              ><span>Sobre o que você que Falar?</span>
+              <input type="text" placeholder="Assunto:" />
+            </label>
+
+            <label for="">
+              <span>Deixe seu Telefone:</span>
+              <input type="tel" placeholder="Telefone:" />
+            </label>
+          </fieldset>
+
+          <fieldset class="form_right">
+            <label for="">
+              <span>Fale aqui:</span>
+              <textarea rows="8" placeholder="Escreva Sua Mensagem:"></textarea>
+            </label>
+            <label for="">
+              <span> Como encontrou o site? </span>
+              <select name="" id="">
+                <option value="">Google</option>
+                <option value="">Yahoo</option>
+                <option value="">Bing</option>
+                <option value="">indicação</option>
+              </select>
+            </label>
+
+            <div class="form_action">
+              <input class="btn first" type="reset" value="Limpar Dados" />
+              <input class="btn" type="submit" value="Enviar Dados" />
+            </div>
+          </fieldset>
+        </form>
+        <div class="clear"></div>
+      </div>
+    </main>
+
+    <footer class="main_footer container">
+      &copy; 2010 - 2024 UpInside Treinamentos - Todos Os Direitos Reservados
+    </footer>
+    <script src="/js/script.js"></script>
+    <script>
+      $(function () {
+        $(".mobmenu").click(function () {
+          $(".main_header_menu .content").slideToggle();
+          $(this).toggleClass("active");
+          return false;
+        });
+      });
+    </script>
+  </body>
+</html>

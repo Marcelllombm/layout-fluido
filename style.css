@@ -14,6 +14,28 @@ iframe[style] {
   max-width: 100%;
   height: auto;
 }
+fieldset {
+  border: 0;
+}
+label {
+  width: 100%;
+  margin-bottom: 20px;
+  display: block;
+}
+label span {
+  display: block;
+  margin-bottom: 8px;
+}
+input,
+select,
+textarea {
+  padding: 10px;
+  width: 100%;
+}
+input.btn {
+  width: auto;
+  cursor: pointer;
+}
 .ratiohd {
   position: relative;
   padding-bottom: 56.25%;
@@ -292,6 +314,20 @@ a:hover {
   background: #eee;
   margin-bottom: 15px;
 } */
+.form_left {
+  float: left;
+  width: 48%;
+}
+.form_right {
+  float: right;
+  width: 48%;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.form_action .first {
+  margin-right: 15px;
+}
 
 /*FOOTER*/
 .main_footer {
@@ -371,6 +407,15 @@ a:hover {
   }
   .art_for:nth-of-type(2n + 0) {
     margin-right: 0 !important;
+  }
+  .form_left,
+  .form_right {
+    float: left;
+    width: 100%;
+  }
+  .form_action {
+    margin: 0 0 15px 0;
+    text-align: center;
   }
 }
 @media (min-width: 581px) {
